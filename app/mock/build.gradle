@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.retrofitstudy.mock"
+        minSdkVersion 18
+        targetSdkVersion 23
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    compileOptions.incremental = true
+}
+
+dependencies {
+    // view
+    compile project(':common')
+    compile project(':demo')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'org.nanohttpd:nanohttpd:2.3.1'
+}

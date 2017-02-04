@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Retrofit Demos</string>
+    <string name="request_api_get">业务请求(GET)</string>
+    <string name="request_api_post">业务请求(POST)</string>
+</resources>

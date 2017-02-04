@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    defaultConfig {
+        applicationId "com.retrofitstudy.demo"
+        minSdkVersion 18
+        targetSdkVersion 23
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+
+    compileOptions.incremental = true
+}
+
+dependencies {
+    compile project(':common')
+    compile project(':demo')
+}
